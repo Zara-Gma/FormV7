@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import MemberApp from "./MemberApp";
+import { DataProvider } from './DataContext'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DataProvider>
+      <MemberApp />
+    </DataProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
