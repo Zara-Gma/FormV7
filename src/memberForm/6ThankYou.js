@@ -19,15 +19,15 @@ export const ThankYou = () => {
       body: formData,
     });
 
-    if (res.status === 200) {
-      Swal.fire("Thanks for signing up", "success");
-      setSuccess(true);
-    }
+    // if (res.status === 200) {
+    //   Swal.fire("Thanks for signing up", "success");
+    //   setSuccess(true);
+    // }
   };
 
-  if (success) {
-    return <Confetti />;
-  }
+  // if (success) {
+  //   return <Confetti />;
+  // }
 
   return (
     <>
